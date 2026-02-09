@@ -31,22 +31,26 @@ export const OurPortfolio = () => (
           will see you soon in an area near you!
         </p>
       </div>
-      <figure className="flex-1 grid grid-cols-2 grid-rows-3 gap-8 h-200 basis-md">
-        <img
-          src={drinks}
-          className="row-start-1 row-span-2 w-full h-full object-cover"
-        />
-        <img
-          src={christmas}
-          className="row-start-3 row-span-1 w-full h-full object-cover object-[50%_80%]"
-        />
-        <img
-          src={food}
-          className="col-start-2 row-start-1 row-span-3 w-full h-full object-cover"
-        />
-      </figure>
+      <GridPictures />
     </div>
-    <BackgroundCloud className="w-5xl -right-50 -top-40 opacity-50"/>
-    <ForegroundCloud className="scale-x-[-1] w-xl bottom-0 left-0 opacity-75"/>
+    <BackgroundCloud className="w-5xl -right-50 -top-40 opacity-50" />
+    <ForegroundCloud className="scale-x-[-1] w-xl bottom-0 left-0 opacity-75" />
   </Section>
+);
+
+export const GridPictures = () => (
+  <figure className="flex-1 grid grid-cols-2 grid-rows-3 gap-8 h-100 md:h-150 lg:h-200 basis-md">
+    <img
+      src={drinks}
+      className="row-start-1 row-span-2 w-full h-full object-cover"
+    />
+    <img
+      src={christmas}
+      className="row-start-3 row-span-1 w-full h-full object-cover object-[50%_80%]"
+    />
+    <img
+      src={food}
+      className="col-start-2 row-start-1 row-span-3 w-full h-full object-cover"
+    />
+  </figure>
 );

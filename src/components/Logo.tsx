@@ -6,8 +6,8 @@ type LogoProps = {
 };
 
 export const Logo = (props: LogoProps) => (
-  <div className="relative">
-    <img src={logo} className={`${props.className ?? ''}`}/>
+  <div className={`relative ${props.className ?? ''}`}>
+    <img src={logo} className="w-full"/>
     <img src={shadow} className="absolute inset-0 -z-10 w-full"/>
   </div>
 );

@@ -8,7 +8,7 @@ export const ForegroundCloud = (props: ForgroundCloudProps) => {
   return (
     <img
       src={foregroundCloud}
-      className={`absolute animate-cloud ${props.className ?? ""}`}
+      className={`hidden lg:block absolute animate-cloud ${props.className ?? ""}`}
     />
   );
 };

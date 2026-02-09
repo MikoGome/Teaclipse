@@ -9,11 +9,14 @@ import { ForegroundCloud } from "../components/ForgroundCloud";
 
 export const AboutUs = () => (
   <Section id="aboutus">
-    <div className="flex flex-wrap-reverse gap-24">
-      <figure className="flex-1 inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-48 w-7xl relative">
-        <img src={boba} className="-rotate-20 w-full h-full" />
-      </figure>
-      <div className="flex-2">
+    <div className="flex flex-col-reverse lg:flex-row flex-wrap-reverse items-center lg:items-end gap-6 lg:gap-24">
+      <div className="relative flex-1 lg:basis-0 text-center">
+        <figure className="inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-48 max-w-3/5 lg:max-w-full relative">
+          <img src={boba} className="-rotate-20 w-full h-full" />
+        </figure>
+        <ForegroundCloud className="left-0 bottom-0 -translate-x-1/2 translate-y-1/3" />
+      </div>
+      <div className="flex-2 w-full">
         <Title value="TEACLIPSE: FIRST CONTACT" />
         <SubTitle value="ABOUT US" />
         <p className="font-opensans">
@@ -41,6 +44,5 @@ export const AboutUs = () => (
       </div>
     </div>
     <BackgroundCloud className="w-1/3 scale-x-[-1] -left-25" />
-    <ForegroundCloud className="w-1/5 left-30 bottom-20" />
   </Section>
 );

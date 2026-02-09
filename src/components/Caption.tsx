@@ -4,5 +4,5 @@ type CaptionProps = {
 }
 
 export const Caption = (props: CaptionProps) => (
-  <span className={`font-extrabold text-6xl whitespace-nowrap relative top-10 font-motor ${props.className ?? ''}`}>{props.value}</span>
+  <span className={`font-extrabold text-3xl sm:text-5xl md:text-6xl font-motor ${props.className ?? ''}`}>{props.value}</span>
 )

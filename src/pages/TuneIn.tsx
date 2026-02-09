@@ -11,7 +11,7 @@ import { BackgroundCloud } from "../components/BackgroundCloud";
 
 export const TuneIn = () => (
   <Section id="tunein">
-    <div className="flex flex-wrap items-center">
+    <div className="flex flex-wrap items-center justify-center">
       <div className="flex-1">
         <Title value="TEACLIPSE: TOTALITY" />
         <SubTitle value="WHY SHOULD YOU TUNE IN?" />
@@ -33,7 +33,7 @@ export const TuneIn = () => (
           part of your journey very soon.
         </p>
       </div>
-      <div>
+      <div className="flex flex-col justify-center items-center flex-1 w-full">
         <Eclipse />
         <h2 className="text-maroon text-4xl font-motor text-center m-10">
           BROWSE OUR MENU
@@ -46,13 +46,13 @@ export const TuneIn = () => (
 );
 
 const Eclipse = () => (
-  <figure className="flex-1 gap-6 bg-no-repeat bg-contain bg-center overflow-visible relative w-3xl">
+  <figure className="flex-1 gap-6 bg-no-repeat bg-contain bg-center overflow-visible relative w-3xl max-w-full -z-30">
     <img src={sun} className="inset-0" />
-    <div className="[clip-path:ellipse(50%_50%_at_right_center)] absolute right-1/2 top-0 -translate-x-2 translate-y-20 w-125 h-125 overflow-hidden">
-      <img src={leftmoon} className="translate-x-30" />
+    <div className="[clip-path:ellipse(50%_50%_at_right_center)] absolute right-1/2 top-0 -translate-x-2 translate-y-1/6 w-[65%] h-[65%] overflow-hidden">
+      <img src={leftmoon} className="translate-x-1/4" />
     </div>
-    <div className="[clip-path:ellipse(50%_50%_at_left_center)] absolute left-1/2 bottom-0 translate-x-2 -translate-y-20 w-125 h-125 overflow-hidden">
-      <img src={rightmoon} className="-translate-x-30 -translate-y-40" />
+    <div className="[clip-path:ellipse(50%_50%_at_left_center)] absolute left-1/2 bottom-0 translate-x-2 -translate-y-1/6 w-[65%] h-[65%] overflow-hidden">
+      <img src={rightmoon} className="-translate-x-1/4 -translate-y-1/4" />
     </div>
   </figure>
 );

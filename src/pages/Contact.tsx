@@ -7,7 +7,7 @@ import { BackgroundCloud } from "../components/BackgroundCloud";
 import { ForegroundCloud } from "../components/ForgroundCloud";
 
 export const Contact = () => (
-  <Section id="contact" className="overflow-y-hidden overflow-x-hidden">
+  <Section id="contact">
     <Title value="CONTACT US" />
     <div className="flex flex-wrap justify-between">
       <div className="flex-1">
