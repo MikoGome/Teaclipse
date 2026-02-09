@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PetitCochon";
+  src: url("./assets/fonts/Lepetitcochon-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Motor";
+  src: url("./assets/fonts/Motor.woff2");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assets/fonts/OpenSans-Regular.woff2");
+}
+
+@theme {
+  --font-petit: PetitCochon;
+  --font-motor: Motor;
+  --font-opensans: OpenSans;
+  --color-peach: #ffbd59;
+  --color-lightorange: #fcdd9d;
+  --color-brown: #b67400;
+  --color-maroon: #be3519;
+}
+
+@layer utilities {
+  @keyframes drift {
+    0%, 100% { 
+      transform: translate(0, 0); 
+    }
+    33% { 
+      transform: translate(5px, -10px); 
+    }
+    66% { 
+      transform: translate(-5px, -5px); 
+    }
+  }
+
+  .animate-cloud {
+    animation: drift 8s ease-in-out infinite;
+  }
+
+  .animate-cloud-background {
+    animation: drift 16s ease-in-out infinite;
+  }
+}
