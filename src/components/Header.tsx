@@ -1,19 +1,29 @@
 import { NAV_ROUTES } from "../utils/constants";
 import { BrandName } from "./BrandName";
 
-export const Header = () => {
+import { HashLink } from "react-router-hash-link";
+
+type HeaderProps = {
+  className?: string;
+};
+
+export const Header = (props: HeaderProps) => {
   return (
-    <nav className="flex flex-wrap gap-4 justify-center h-auto mb-8 md:mb-12 items-center">
+    <nav
+      className={`flex flex-wrap gap-4 justify-center h-auto md:mb-6 lg:mb-12 items-center ${props.className ?? ""}`}
+    >
       <BrandName />
       <ul className="flex text-peach gap-4 md:gap-8 justify-center text-lg md:text-2xl flex-wrap">
         {NAV_ROUTES.map((navRoute) => (
           <li
-            key={navRoute}
-            className="border-t border-b border-dotted border-amber-400 px-4 md:w-56 flex justify-center items-center cursor-pointer text-center py-2 md:py-6"
+            key={navRoute.headerName}
+            className="border-t border-b border-dotted border-amber-400 px-4 md:w-56 flex justify-center items-center cursor-pointer text-center py-2 md:py-4 lg:py-6"
           >
-            <a href={`#${navRoute.toLowerCase().replace(/\ /g, "")}`}>
-              <span>{navRoute}</span>
-            </a>
+            {navRoute.path && (
+              <HashLink smooth to={navRoute.path}>
+                <span>{navRoute.headerName}</span>
+              </HashLink>
+            )}
           </li>
         ))}
       </ul>

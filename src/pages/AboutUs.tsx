@@ -7,7 +7,7 @@ import boba from "../assets/images/boba.jpeg";
 import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const AboutUs = () => (
-  <Section id="aboutus">
+  <Section id="about">
     <div className="flex flex-col-reverse lg:flex-row flex-wrap-reverse items-center lg:items-end gap-6 lg:gap-24">
       <div className="relative flex-1 lg:basis-0 text-center">
         <figure className="inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-48 max-w-3/5 lg:max-w-full relative">

@@ -10,7 +10,7 @@ import food from "../assets/images/food.jpeg";
 import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const OurPortfolio = () => (
-  <Section id="ourportfolio">
+  <Section id="portfolio">
     <div className="flex flex-wrap gap-24">
       <div className="flex-1 relative">
         <Title value="TEACLIPSE: SECOND CONTACT" />

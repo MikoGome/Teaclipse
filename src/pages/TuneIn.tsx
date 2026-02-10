@@ -7,6 +7,8 @@ import { Section } from "../layouts/Section";
 import leftmoon from "../assets/images/leftmoon.png";
 import rightmoon from "../assets/images/rightmoon.jpeg";
 import sun from "../assets/images/sun.png";
+import { HashLink } from "react-router-hash-link";
+
 
 export const TuneIn = () => (
   <Section id="tunein">
@@ -35,7 +37,7 @@ export const TuneIn = () => (
       <div className="flex flex-col justify-center items-center flex-1 w-full">
         <Eclipse />
         <h2 className="text-maroon text-4xl font-motor text-center m-10">
-          BROWSE OUR MENU
+          <HashLink smooth to="/menu#top">BROWSE OUR MENU</HashLink>
         </h2>
       </div>
     </div>
