@@ -1,13 +1,12 @@
 import { SubTitle } from "../components/SubTitle";
 import { Title } from "../components/Title";
+import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 import { Section } from "../layouts/Section";
 
 import leftmoon from "../assets/images/leftmoon.png";
 import rightmoon from "../assets/images/rightmoon.jpeg";
 import sun from "../assets/images/sun.png";
-import { ForegroundCloud } from "../components/ForgroundCloud";
-import { BackgroundCloud } from "../components/BackgroundCloud";
 
 export const TuneIn = () => (
   <Section id="tunein">
@@ -22,11 +21,11 @@ export const TuneIn = () => (
           bring out the earthy flavors of our tea leaves and stimulating
           memories with flavors from childhood inspirations.
         </p>
-        <br/>
+        <br />
         <h2 className="text-maroon text-2xl font-bold text-center">
           "HERE FOR YOUR EVERY PHASE"
         </h2>
-        <br/>
+        <br />
         <p className="font-opensans">
           Just like our slogan, we aim to become a space inclusive and open to
           everyone. We hope you can join us on our journey, and we hope to be
@@ -40,13 +39,13 @@ export const TuneIn = () => (
         </h2>
       </div>
     </div>
-    <ForegroundCloud className="w-150 top-0 right-0 translate-x-20"/>
-    <BackgroundCloud className="w-2xl scale-x-[-1] left-0 bottom-0 -translate-x-1/4 translate-y-50 opacity-75"/>
+    <ForegroundCloud className="w-150 top-0 right-0 translate-x-20" />
+    <BackgroundCloud className="w-2xl scale-x-[-1] left-0 bottom-0 -translate-x-1/4 translate-y-50 opacity-75" />
   </Section>
 );
 
 const Eclipse = () => (
-  <figure className="flex-1 gap-6 bg-no-repeat bg-contain bg-center overflow-visible relative w-3xl max-w-full -z-30">
+  <figure className="flex-1 bg-no-repeat bg-contain bg-center overflow-visible relative w-3xl max-w-full -z-30 overflow-x-hidden">
     <img src={sun} className="inset-0" />
     <div className="[clip-path:ellipse(50%_50%_at_right_center)] absolute right-1/2 top-0 -translate-x-2 translate-y-1/6 w-[65%] h-[65%] overflow-hidden">
       <img src={leftmoon} className="translate-x-1/4" />

@@ -7,13 +7,12 @@ import drinks from "../assets/images/drinks.jpeg";
 import christmas from "../assets/images/christmas.jpeg";
 import food from "../assets/images/food.jpeg";
 
-import { BackgroundCloud } from "../components/BackgroundCloud";
-import { ForegroundCloud } from "../components/ForgroundCloud";
+import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const OurPortfolio = () => (
   <Section id="ourportfolio">
     <div className="flex flex-wrap gap-24">
-      <div className="flex-1">
+      <div className="flex-1 relative">
         <Title value="TEACLIPSE: SECOND CONTACT" />
         <SubTitle value="OUR PORTFOLIO" />
         <p className="font-opensans">
@@ -30,11 +29,11 @@ export const OurPortfolio = () => (
           events and night markets across the Los Angeles area. Hopefully, we
           will see you soon in an area near you!
         </p>
+        <ForegroundCloud className="scale-x-[-1.3] scale-y-[1.3] w-full top-full left-0 -translate-x-1/2 lg:-translate-y-1/2 opacity-75" />
       </div>
       <GridPictures />
     </div>
     <BackgroundCloud className="w-5xl -right-50 -top-40 opacity-50" />
-    <ForegroundCloud className="scale-x-[-1] w-xl bottom-0 left-0 opacity-75" />
   </Section>
 );
 

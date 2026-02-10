@@ -4,8 +4,7 @@ import { Title } from "../components/Title";
 import { Section } from "../layouts/Section";
 
 import boba from "../assets/images/boba.jpeg";
-import { BackgroundCloud } from "../components/BackgroundCloud";
-import { ForegroundCloud } from "../components/ForgroundCloud";
+import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const AboutUs = () => (
   <Section id="aboutus">
