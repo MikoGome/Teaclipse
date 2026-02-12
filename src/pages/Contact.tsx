@@ -16,13 +16,13 @@ export const Contact = () => (
       <div className="flex-1">
         <SubCaption value="EMAIL" className="text-maroon text-center" />
         <a href="mailto:teajointusa@gmail.com">
-          <SubCaption value="TEAJOINTUSA@GMAIL.COM" className="text-center" />
+          <SubCaption value="TEAJOINTUSA@GMAIL.COM" className="text-center hover:scale-110 transition" />
         </a>
       </div>
       <div className="flex-1">
         <SubCaption value="INSTAGRAM" className="text-maroon text-center" />
         <a href="https://www.instagram.com/teajointusa/">
-          <SubCaption value="@TEAJOINTUSA" className="text-center" />
+          <SubCaption value="@TEAJOINTUSA" className="text-center hover:scale-110 transition" />
         </a>
       </div>
     </div>

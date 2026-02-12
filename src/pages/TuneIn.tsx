@@ -9,7 +9,6 @@ import rightmoon from "../assets/images/rightmoon.jpeg";
 import sun from "../assets/images/sun.png";
 import { HashLink } from "react-router-hash-link";
 
-
 export const TuneIn = () => (
   <Section id="tunein">
     <div className="flex flex-wrap items-center justify-center">
@@ -34,14 +33,16 @@ export const TuneIn = () => (
           part of your journey very soon.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center flex-1 w-full">
+      <div className="flex flex-col justify-center items-center flex-1 w-full relative">
+        <ForegroundCloud className="w-150 top-0 left-full -translate-x-1/3" />
         <Eclipse />
-        <h2 className="text-maroon text-4xl font-motor text-center m-10">
-          <HashLink smooth to="/menu#top">BROWSE OUR MENU</HashLink>
+        <h2 className="text-maroon text-4xl font-motor text-center m-10 hover:scale-110 transition duration-100">
+          <HashLink smooth to="/menu#top">
+            BROWSE OUR MENU
+          </HashLink>
         </h2>
       </div>
     </div>
-    <ForegroundCloud className="w-150 top-0 right-0 translate-x-20" />
     <BackgroundCloud className="w-2xl scale-x-[-1] left-0 bottom-0 -translate-x-1/4 translate-y-50 opacity-75" />
   </Section>
 );

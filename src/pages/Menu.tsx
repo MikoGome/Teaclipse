@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 export const Menu = () => (
   <>
     <Header className="pt-12"/>
-    <figure className="flex flex-col md:flex-row gap-4">
+    <figure className="flex flex-col md:flex-row">
       <img src={menu_page_1} className="w-full md:flex-1" />
       <img src={menu_page_2} className="w-full md:flex-1" />
     </figure>

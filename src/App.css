@@ -2,11 +2,18 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-  overflow-x: hidden;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
