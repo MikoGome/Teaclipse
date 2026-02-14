@@ -29,7 +29,7 @@ export const OurPortfolio = () => (
           events and night markets across the Los Angeles area. Hopefully, we
           will see you soon in an area near you!
         </p>
-        <ForegroundCloud className="scale-x-[-1.3] scale-y-[1.3] w-full top-full left-0 -translate-x-1/2 lg:-translate-y-1/2 opacity-75" />
+        <ForegroundCloud className="scale-x-[-1.3] scale-y-[1.3] w-full top-full right-full lg:translate-x-1/3 -translate-y-1/2 opacity-50" />
       </div>
       <GridPictures />
     </div>

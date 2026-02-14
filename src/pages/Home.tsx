@@ -13,10 +13,10 @@ export const Home = () => (
         <Caption value="HERE FOR" className="whitespace-nowrap"/>
         <ForegroundCloud className="top-full w-96 origin-top scale-150" />
       </div>
-      <Logo className="w-7xl max-w-1/2 min-w-96 -order-1 lg:order-0" />
+      <Logo className="w-7xl max-w-1/2 min-w-80 -order-1 lg:order-0" />
       <div className="relative w-full text-center lg:top-16 lg:text-start">
         <Caption value="YOUR EVERY PHASE" className="whitespace-nowrap" />
-        <ForegroundCloud className="w-96 origin-top scale-170 top-full left-2/3 translate-y-20" />
+        <ForegroundCloud className="w-96 origin-top scale-170 top-full left-2/3 translate-y-1/2" />
       </div>
     </div>
     <BackgroundCloud className="top-0 -right-1/9 w-1/2" />

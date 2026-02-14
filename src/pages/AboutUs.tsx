@@ -10,7 +10,7 @@ export const AboutUs = () => (
   <Section id="about">
     <div className="flex flex-col-reverse lg:flex-row flex-wrap-reverse items-center lg:items-end gap-6 lg:gap-24">
       <div className="relative flex-1 lg:basis-0 text-center">
-        <figure className="inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-48 max-w-3/5 lg:max-w-full relative">
+        <figure className="inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-48 max-w-3/5 lg:max-w-full relative -z-15">
           <img src={boba} className="-rotate-20 w-full h-full" />
         </figure>
         <ForegroundCloud className="left-0 bottom-0 -translate-x-1/2 translate-y-1/3" />
