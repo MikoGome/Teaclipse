@@ -11,12 +11,12 @@ export const Home = () => (
     <div className="flex flex-col lg:flex-row justify-center items-center relative">
       <div className="relative w-full text-center lg:top-16 lg:text-end">
         <Caption value="HERE FOR" className="whitespace-nowrap"/>
-        <ForegroundCloud className="top-full w-96 origin-top scale-150" />
+        <ForegroundCloud className="top-full max-w-96 origin-top scale-150" />
       </div>
       <Logo className="w-7xl max-w-1/2 min-w-80 -order-1 lg:order-0" />
       <div className="relative w-full text-center lg:top-16 lg:text-start">
         <Caption value="YOUR EVERY PHASE" className="whitespace-nowrap" />
-        <ForegroundCloud className="origin-top bottom-0 xl:scale-150 -right-1/2 translate-y-full" />
+        <ForegroundCloud className="origin-top max-w-lg bottom-0 left-0 translate-x-1/2 2xl:scale-150 translate-y-[110%]" />
       </div>
     </div>
     <BackgroundCloud className="top-0 -right-1/9 w-1/2" />

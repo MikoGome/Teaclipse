@@ -17,7 +17,7 @@ export const Header = (props: HeaderProps) => {
         {NAV_ROUTES.map((navRoute) => (
           <li
             key={navRoute.headerName}
-            className="border-t border-b border-dotted border-amber-400 basis-full px-4 min-w-24 md:w-48 lg:w-56 flex justify-center items-center cursor-pointer text-center py-2 md:py-4 lg:py-6 bg-[rgba(0,0,0,0.5)] backdrop-blur-md"
+            className="border-t border-b border-dotted border-amber-400 portrait:basis-full px-4 min-w-24 md:w-48 lg:w-56 flex justify-center items-center cursor-pointer text-center py-2 md:py-4 lg:py-6 bg-[rgba(0,0,0,0.5)] backdrop-blur-md"
           >
             {navRoute.path && (
               <HashLink smooth to={navRoute.path} className="hover:scale-110 transition">
