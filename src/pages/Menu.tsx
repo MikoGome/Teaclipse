@@ -1,7 +1,6 @@
 import menu_page_1 from "../assets/menu/menu_page_1.png";
 import menu_page_2 from "../assets/menu/menu_page_2.png";
 import { Header } from "../components/Header";
-import { Section } from "../layouts/Section";
 
 export const Menu = () => (
   <>
