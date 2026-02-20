@@ -7,7 +7,7 @@ import { Section } from "../layouts/Section";
 export const Contact = () => (
   <Section id="contact" className="overflow-hidden">
     <Title value="CONTACT US" />
-    <div className="flex flex-wrap justify-between mb-12">
+    <div className="flex flex-wrap gap-4 justify-between lg:mb-12">
       <div className="flex-1">
         <SubCaption value="INQUIRIES?" className="text-brown" />
         <SubCaption value="COLLABORATIONS?" className="text-brown" />
@@ -26,6 +26,6 @@ export const Contact = () => (
         </a>
       </div>
     </div>
-    <Footer className="flex-1 flex flex-col justify-center items-center" />
+    <Footer className="flex-1 flex flex-col justify-center items-center mt-24" />
   </Section>
 );

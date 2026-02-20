@@ -11,11 +11,11 @@ import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const OurPortfolio = () => (
   <Section id="portfolio">
-    <div className="flex flex-wrap gap-24">
-      <div className="flex-1 relative">
+    <div className="flex flex-col lg:flex-row flex-wrap-reverse items-center lg:items-end gap-6 lg:gap-24">
+      <div className="flex-1 min-w-60">
         <Title value="TEACLIPSE: SECOND CONTACT" />
         <SubTitle value="OUR PORTFOLIO" />
-        <p className="font-opensans">
+        <p className="font-opensans relative">
           We are currently operating on a pop-up basis under the name “Tea
           Joint.” We have been working with other small businesses and
           collaborating with them to sell our drinks at their storefront.
@@ -28,8 +28,8 @@ export const OurPortfolio = () => (
           We are gradually increasing our participation in local community
           events and night markets across the Los Angeles area. Hopefully, we
           will see you soon in an area near you!
+          <ForegroundCloud className="scale-x-[-1.3] scale-y-[1.3] w-2/3 top-full right-full translate-x-1/2 translate-y-5/7 opacity-50" />
         </p>
-        <ForegroundCloud className="scale-x-[-1.3] scale-y-[1.3] w-full top-full right-full lg:translate-x-1/3 -translate-y-1/2 opacity-50" />
       </div>
       <GridPictures />
     </div>
@@ -38,18 +38,18 @@ export const OurPortfolio = () => (
 );
 
 export const GridPictures = () => (
-  <figure className="flex-1 grid grid-cols-2 grid-rows-3 gap-8 h-100 md:h-150 lg:h-200 basis-md">
+  <figure className="flex-1 grid grid-cols-[1fr_1fr] grid-rows-5 gap-x-6 gap-y-12 min-w-96 max-w-3/5 lg:max-w-full aspect-square self-center">
     <img
       src={drinks}
-      className="row-start-1 row-span-2 w-full h-full object-cover"
+      className="row-start-1 row-span-3 w-full h-full object-cover"
     />
     <img
       src={christmas}
-      className="row-start-3 row-span-1 w-full h-full object-cover object-[50%_80%]"
+      className="row-start-4 row-span-2 w-full h-full object-cover object-[50%_80%]"
     />
     <img
       src={food}
-      className="col-start-2 row-start-1 row-span-3 w-full h-full object-cover"
+      className="col-start-2 row-start-1 row-span-5 w-full h-full object-cover"
     />
   </figure>
 );

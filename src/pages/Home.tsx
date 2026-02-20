@@ -6,7 +6,7 @@ import { Section } from "../layouts/Section";
 import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const Home = () => (
-  <Section id="home" className="justify-start pt-20">
+  <Section id="home" className="justify-start">
     <Header />
     <div className="flex flex-col lg:flex-row justify-center items-center relative">
       <div className="relative w-full text-center lg:top-16 lg:text-end">
@@ -16,7 +16,7 @@ export const Home = () => (
       <Logo className="w-7xl max-w-1/2 min-w-80 -order-1 lg:order-0" />
       <div className="relative w-full text-center lg:top-16 lg:text-start">
         <Caption value="YOUR EVERY PHASE" className="whitespace-nowrap" />
-        <ForegroundCloud className="w-96 origin-top scale-170 top-full left-2/3 translate-y-1/2" />
+        <ForegroundCloud className="origin-top bottom-0 xl:scale-150 -right-1/2 translate-y-full" />
       </div>
     </div>
     <BackgroundCloud className="top-0 -right-1/9 w-1/2" />

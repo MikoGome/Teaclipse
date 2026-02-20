@@ -11,7 +11,7 @@ import { HashLink } from "react-router-hash-link";
 
 export const TuneIn = () => (
   <Section id="tunein">
-    <div className="flex flex-wrap items-center justify-center">
+    <div className="flex flex-col lg:flex-row items-center justify-center">
       <div className="flex-1">
         <Title value="TEACLIPSE: TOTALITY" />
         <SubTitle value="WHY SHOULD YOU TUNE IN?" />
@@ -33,7 +33,7 @@ export const TuneIn = () => (
           part of your journey very soon.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center flex-1 w-full relative">
+      <div className="flex flex-col justify-center items-center w-full flex-1 relative">
         <ForegroundCloud className="w-150 top-0 left-full -translate-x-1/3" />
         <Eclipse />
         <h2 className="text-maroon text-4xl font-motor text-center m-10 hover:scale-110 transition duration-100">
@@ -48,7 +48,7 @@ export const TuneIn = () => (
 );
 
 const Eclipse = () => (
-  <figure className="flex-1 bg-no-repeat bg-contain bg-center overflow-visible relative w-3xl max-w-full -z-30 overflow-x-hidden">
+  <figure className="flex-1 bg-no-repeat bg-contain bg-center overflow-visible relative min-w-80 max-w-4/5 lg:max-w-full -z-30 overflow-x-hidden">
     <img src={sun} className="inset-0" />
     <div className="[clip-path:ellipse(50%_50%_at_right_center)] absolute right-1/2 top-0 -translate-x-2 translate-y-1/6 w-[65%] h-[65%] overflow-hidden">
       <img src={leftmoon} className="translate-x-1/4" />

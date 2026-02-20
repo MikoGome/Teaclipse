@@ -8,7 +8,7 @@ type SectionProps = {
 
 export const Section = (props: SectionProps) => (
   <section
-    className={`relative min-h-svh p-6 md:p-12 px-6 sm:px-12 md:px-[15%] text-white flex flex-col justify-center ${props.className ?? ""}`}
+    className={`relative min-h-svh p-6 md:p-12 px-6 sm:px-12 md:px-[10%] lg:px-[15%] text-white flex flex-col justify-center ${props.className ?? ""}`}
     id={props.id}
   >
     {props.children}
