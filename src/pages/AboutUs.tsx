@@ -8,7 +8,7 @@ import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const AboutUs = () => (
   <Section id="about">
-    <div className="flex flex-col-reverse lg:flex-row flex-wrap-reverse items-center lg:items-end gap-6 lg:gap-24">
+    <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-6 lg:gap-24">
       <Boba />
       <div className="flex-2 w-full">
         <Title value="TEACLIPSE: FIRST CONTACT" />
@@ -43,7 +43,7 @@ export const AboutUs = () => (
 
 const Boba = () => (
   <div className="relative flex-1 lg:basis-0 text-center self-center">
-    <figure className="inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-80 max-w-2/5 lg:max-w-full relative -z-15">
+    <figure className="inline-block overflow-hidden [clip-path:ellipse(45%_50%)] rotate-20 min-w-64 max-w-2/5 lg:max-w-full relative -z-15">
       <img src={boba} className="-rotate-20 w-full h-full" />
     </figure>
     <ForegroundCloud className="left-0 bottom-0 -translate-x-1/2 translate-y-1/3" />

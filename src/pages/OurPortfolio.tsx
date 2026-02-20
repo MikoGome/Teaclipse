@@ -11,8 +11,8 @@ import { ForegroundCloud, BackgroundCloud } from "../components/Clouds";
 
 export const OurPortfolio = () => (
   <Section id="portfolio">
-    <div className="flex flex-col lg:flex-row flex-wrap-reverse items-center lg:items-end gap-6 lg:gap-24">
-      <div className="flex-1 min-w-60">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-24">
+      <div className="flex-1">
         <Title value="TEACLIPSE: SECOND CONTACT" />
         <SubTitle value="OUR PORTFOLIO" />
         <p className="font-opensans relative">
@@ -38,7 +38,7 @@ export const OurPortfolio = () => (
 );
 
 export const GridPictures = () => (
-  <figure className="flex-1 grid grid-cols-[1fr_1fr] grid-rows-5 gap-x-6 gap-y-12 min-w-96 max-w-3/5 lg:max-w-full aspect-square self-center">
+  <figure className="flex-1 grid grid-cols-[1fr_1fr] grid-rows-5 gap-x-6 gap-y-12 min-w-80 max-w-3/5 lg:max-w-full aspect-square self-center">
     <img
       src={drinks}
       className="row-start-1 row-span-3 w-full h-full object-cover"
